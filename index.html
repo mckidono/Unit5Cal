@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title> 
+        Rank select
+    </title> 
+    <link rel="stylesheet" href="Change.css">
+</head> 
+  
+<body> 
+    <form>
+        <fieldset style = "margin-left: 25%; margin-right: 25%; background-color: white;">
+
+            <legend>Rank</legend>
+    <table>
+        <tr>
+            <th >Qty</th>
+            <th style="width:250px">Product</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td ><input size="2" type="number" placeholder="-" id="jQqty" onchange="caljQ()" value="0"></td>
+            <td>Learning jQuery</td>
+            <td><p>$39.99</p></td>
+            <td><p class="outputjQ">    $<span id="jQTotal"></span>
+            </p></td>
+        </tr>
+        <tr>
+            <td><input size="2" type="number" placeholder="-" id="DonoQty" onchange="caljQ()" value="0"></td>
+            <td >jQuery Donation</td>
+            <td><p>$14.99</p></td>
+            <td><p class="outputDono">    $<span id="DonoTotal"></p></span></td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td>Grand Total</td>
+            <td><p><span id="Total"></p></span></td>
+        </tr>
+    </table>
+    
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="changing.js"></script>
+    
+
+      
+    <br>  
+        </fieldset>
+</body> 
+</html>  
